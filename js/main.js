@@ -10,7 +10,7 @@ var month = null;
 
 //calculate day of birth
 
-var dayOfTheWeek ={(cc/4)}
+//var dayOfTheWeek ={(cc/4)}
 //get user's akhan name
 
 function getUserInput(){
