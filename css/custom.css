@@ -4,7 +4,9 @@ body {display: flex;
     z-index: -100;
 }
 
+.dropdown {margin: 2.5%;
 
+}
 
 #container {height: 300px;
             width: 60%;
