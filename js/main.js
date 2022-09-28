@@ -9,4 +9,10 @@ var month = null;
     //get user's gender m,f
 
 //calculate day of birth
+
+var dayOfTheWeek ={(cc/4)}
 //get user's akhan name
+
+function getUserInput(){
+
+}
