@@ -5,7 +5,7 @@ var day = null;
 var month = null;
 
 //get user input
-    //get user's birthday,
+    //get user's birthday, 31.12.1900
     //get user's gender m,f
 
 //calculate day of birth
