@@ -119,7 +119,7 @@ dayOfWeek=Math.round(dayOfWeek)
 
     }else {
 
-        console.log("Please Pick Your Gender");} 
+        alert("Please Pick Your Gender");} 
 
 console.log(DAY_OF_WEEK[dayOfWeek])
 
