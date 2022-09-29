@@ -2,55 +2,61 @@ const MALE_NAMES =["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 const FEMALE_NAMES =["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 const DAY_OF_WEEK =["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday"];
 var day 
+var date 
 var month 
 var gender
+var akhanName
+var dayOfWeek
+var century
 
 
 //To save user birthday
-let date = document.querySelector("#Date");
-console.log(date);
+// let date = document.querySelector("#Date");
+// console.log(date);
 
-// fetch date figure from user section in string form
-date.valueAsDate = new Date();
+// // fetch date figure from user section in string form
+// date.valueAsDate = new Date();
 
-date.onchange = function(){
+// date.onchange = function(){
 
-   console.log(date.value);
-   {
-    return date;
-   }
+//    console.log(date.value);
+//    {
+//     return date;
+//    }
+// }
+
+function getDate () {
+
+    date = document.querySelector("#Date").value;
+
+
 }
 
+    // document.getElementById("demo").innerHTML = x;
+
+
+
+
+
+    
+
+
+
+
 function getUserGender() {
-    gender= document.querySelector (".form-select").value;
+    gender= document.querySelector ("#floatingSelect").value;
     console.log(gender)
 }
 
-function getAkhanName(){
 
-    if (gender === "Male"){
+    
 
-    indexOfDay = DAY_OF_WEEK.indexOf("Day");
+    function getAkhanName(){
+        getUserGender();
+        getDate();
 
-      akhanName = MALE_NAMES[indexOfDay];
-
-      console.log("Your Akhan Name is " + AkhanName);
-
-    }else if (gender === "Female"){
-
-     indexOfDay = DAY_OF_WEEK.indexOf("Saturday");
-
-        akhanName = FEMALE_NAMES[indexOfDay];
-
-       console.log("Your Akhan Name is " + akhanName);}
-
-    else {console.log("Please Pick Your Gender");
-
-
-
-
-
-  
+        console.log(gender)
+        console.log(date)
 
 //Calculate day of the week
 
@@ -68,11 +74,69 @@ function getAkhanName(){
 //mod - is the modulus function ( % )
 
 
-//date.tostring
-//var century =date.slice (0,2);
-//var YY = date.slice (2,4);
-//var MM = date.slice(5,7);
-//var DD = date.slice (8,9);
+date= date.toString()
+console.log(date)
+
+century = date.slice(0,2);
+console.log(century)
+var YY = date.slice(2,4);
+var MM = date.slice(5,7);
+var DD = date.slice(8,9);
+
+
+century =parseInt(century)
+year =parseInt(YY)
+day =parseInt(DD)
+month =parseInt(MM)
+
+console.log(century)
+console.log(year)
+console.log(day)
+console.log(month)
+console.log (typeof(century))
+
+
+dayOfWeek= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7
+
+dayOfWeek=Math.round(dayOfWeek)
+
+    if (gender === "Male"){
+
+
+    indexOfDay = dayOfWeek;
+
+      akhanName = MALE_NAMES[indexOfDay];
+
+   
+
+    }else if (gender === "Female"){
+
+     indexOfDay = dayOfWeek
+
+        akhanName = FEMALE_NAMES[indexOfDay];
+
+       //console.log("Your Akhan Name is " + akhanName);}
+
+    }else {
+
+        console.log("Please Pick Your Gender");} 
+
+console.log(DAY_OF_WEEK[dayOfWeek])
+
+document.getElementById("Click_here").innerHTML = "You were born on " + DAY_OF_WEEK[dayOfWeek] + ". Your Akhan name is " + akhanName;
+
+
+
+    }
+    
+
+
+
+
+    
+
+
+
 
 
 //get user input
@@ -81,7 +145,7 @@ function getAkhanName(){
 
 
 
-//var dayOfTheWeek ={(cc/4)}
+
 //get user's akhan name
 
 // function getUserInput(){
@@ -108,9 +172,3 @@ function getAkhanName(){
 //     getUserInput{};
 
 // }
-
-
-
-
-
-// //document.getElementById ("Your Akhan name is").innerText= Kwasi

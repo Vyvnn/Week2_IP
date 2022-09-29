@@ -11,8 +11,10 @@ body {display: flex;
     z-index: -100;
     background-image: url("../images/cocoa\ pod.jpg");
     background-repeat: no-repeat;
-    background-size: 150% 150%;
-}
+    background-size: cover;
+    background-position: center;
+    
+    
 
 .dropdown {margin: 2.5%;
 
@@ -22,14 +24,12 @@ body {display: flex;
 }
 
 
-
-#container {height: 300px;
-            width: 60%;
-            background-color: rgb(5, 159, 66);
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-
+#container {height: 310px;
+        width: 60%;
+    background-color: rgb(5, 159, 66);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 
