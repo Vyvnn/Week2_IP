@@ -19,9 +19,13 @@ body {display: flex;
 .dropdown {margin: 2.5%;
 
 }
-#get_button {margin: 0.5%;
 
+#get_button:hover {
+    background-color: #032304; /* Green */
+    color: white;
 }
+
+
 
 
 #container 
