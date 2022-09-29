@@ -48,5 +48,6 @@ body {display: flex;
 
 }
 h1{text-decoration: underline;
+    font-style: inherit;
 
 }
