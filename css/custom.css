@@ -23,8 +23,13 @@ body {display: flex;
 #get_button:hover {
     background-color: #032304; /* Green */
     color: white;
+    margin: 0.5%;
+    
 }
 
+#floatingSelect {margin: 2.5%;
+
+}
 
 
 
