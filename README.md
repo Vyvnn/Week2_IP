@@ -55,6 +55,9 @@ gender -- male selected, Expected output is You were born on Sunday and Your aka
 - CSS
 - JAVASCRIPT
 
+#### Known Bugs
+There are no known bugs on this project.
+
 ###### Contact information.
 - Email: vivyan3@gmail.com
 - Phone no: 0710437281
@@ -64,9 +67,3 @@ The License used is GPL
 
 Copyright (c) 2022 Vivian Muthoni
 
-The project code is consistently indented and follows the language syntax.
-The project is submitted in time. It should be submitted before 6:00 pm Friday unless otherwise stated.
-The project code is pushed to Github and the project is deployed to gh-pages.
-The project name, description, and URL to live site are provided on the Github repository.
-Commits are made regularly with relevant and clear commit messages associated with them.
-The project should be polished in a portfolio-quality state.
