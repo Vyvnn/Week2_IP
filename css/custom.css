@@ -12,7 +12,7 @@ body {display: flex;
     background-image: url("../images/cocoa\ pod.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;}
     
     
 
@@ -24,8 +24,9 @@ body {display: flex;
 }
 
 
-#container {height: 310px;
-        width: 60%;
+#container 
+{height: 310px;
+    width: 60%;
     background-color: rgb(5, 159, 66);
     display: flex;
     align-items: center;
