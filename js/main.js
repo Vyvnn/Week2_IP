@@ -57,7 +57,7 @@ function getUserGender() {
 }
 
 //to get alert on invalid date of birth selected
-function noFutureDate(){
+function noLaterDate(){
 
     parseddateToday = Date.parse(dateToday);
   
@@ -66,7 +66,7 @@ function noFutureDate(){
     if (parsedDateNow > parseddateToday) {
   
       alert("Date cannot be greater than today");
-  
+  location.reload();
       throw Error();
   
      }
@@ -74,12 +74,11 @@ function noFutureDate(){
   };
 
 
-   
 // to get Akhan Name
 function getAkhanName(){
         getUserGender();
         getDate();
-        noFutureDate()
+        noLaterDate()
 
         if (!date){alert("Please pick your birthday");
 
