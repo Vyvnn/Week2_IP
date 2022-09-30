@@ -8,6 +8,7 @@ var gender
 var akhanName
 var dayOfWeek
 var century
+var dateToday = new Date();
 
 
 // to get date
@@ -55,11 +56,30 @@ function getUserGender() {
     console.log(gender);
 }
 
+//to get alert on invalid date of birth selected
+function noFutureDate(){
+
+    parseddateToday = Date.parse(dateToday);
+  
+    parsedDateNow = Date.parse(date);
+  
+    if (parsedDateNow > parseddateToday) {
+  
+      alert("Date cannot be greater than today");
+  
+      throw Error();
+  
+     }
+  
+  };
+
+
    
 // to get Akhan Name
 function getAkhanName(){
         getUserGender();
         getDate();
+        noFutureDate()
 
         if (!date){alert("Please pick your birthday");
 
