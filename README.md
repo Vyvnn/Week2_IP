@@ -24,7 +24,12 @@ Step 3 : Open the index.html file to view the application on your preferred web 
 ### BDD.
 The application should output to the user their Akan name depending on their gender. For example, if a user is male and the result of the calculation is 0, then the application should match that with Kwasi since Kwasi corresponds to Sunday which has an index 0. Hence the output the user will see should be something like “Your Akan name is Kwasi”
 
-It also check whether the date and month entered is valid. if either of them is invalid,  the user should be alerted and asked to enter a valid one e.g "Please pick your birthdate"
+
+
+It check whether the date and month entered is valid. if either of them is invalid,  the output user should be alerted and asked to enter a birth date  i.e"Please pick your birthdate" .when a user selects gender before the dae of birth,they will be prompted with the same alert message. 
+
+Also if a valid date is selected and no gender selected,the output user is alerted and asked to select a gender i.e "Please pick your gender" .
+
 
 
 

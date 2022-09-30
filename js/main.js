@@ -14,6 +14,7 @@ var century
 function getDate () {
 
 date = document.querySelector("#Date").value;
+
 console.log(date);
 date= date.toString();
 console.log(date);
@@ -44,8 +45,6 @@ dayOfWeek=Math.floor (dayOfWeek);
 
 
 return date;
-
-
 
 
 }
@@ -98,18 +97,7 @@ document.getElementById("Click_here").innerHTML = "You were born on " + DAY_OF_W
 
 console.log(DAY_OF_WEEK[dayOfWeek])
 
-
-
-
-
     }
-    
-
-
-
-
-    
-
 
 
 
