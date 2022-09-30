@@ -26,20 +26,20 @@ var MM = date.slice(5,7);
 var DD = date.slice(8,10);
 console.log(day);
 
-
+//date to interger
 century =parseInt(century);
 year =parseInt(YY);
 day =parseInt(DD);
 month =parseInt(MM);
 
-console.log(century)
-console.log(year)
-console.log(day)
-console.log(month)
-console.log (typeof(century))
+console.log(century);
+console.log(year);
+console.log(day);
+console.log(month);
+console.log (typeof(century));
 
 
-dayOfWeek= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
+dayOfWeek= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + (day-0.5) )% 7;
 
 dayOfWeek=Math.floor (dayOfWeek);
 
@@ -49,7 +49,7 @@ return date;
 
 }
 
-    //to get usergender
+//to get usergender
 function getUserGender() {
     gender= document.querySelector ("#floatingSelect").value;
     console.log(gender);

@@ -16,9 +16,9 @@ By Vivian Muthoni,see more information here https://cutt.ly/oVCWQ4X
 ### Setup instructions - includes any scripts that need to be run if necessary.
 To view the app, open the Github Pages link provided below on the README. Here is a run through of how to set up the application
 
-Step 1 : Clone this repository using git clone https://github.com/Vyvnn/week2_IP.git, or downloading a ZIP file of the code.
-Step 2 : The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened
-Step 3 : Open the index.html file to view the application on your preferred web browser
+- Step 1 : Clone this repository using git clone https://github.com/Vyvnn/week2_IP.git, or downloading a ZIP file of the code.
+- Step 2 : The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened
+- Step 3 : Open the index.html file to view the application on your preferred web browser
 
 
 ### BDD.
@@ -26,7 +26,7 @@ The application should output to the user their Akan name depending on their gen
 
 
 
-It check whether the date and month entered is valid. if either of them is invalid,  the output user should be alerted and asked to enter a birth date  i.e"Please pick your birthdate" .when a user selects gender before the dae of birth,they will be prompted with the same alert message. 
+It check whether the date and month entered is valid. if either of them is invalid,  the output user should be alerted and asked to enter a birth date  i.e"Please pick your birthdate" .when a user selects gender before the day of birth,they will be prompted with the same alert message. 
 
 Also if a valid date is selected and no gender selected,the output user is alerted and asked to select a gender i.e "Please pick your gender" .
 
