@@ -79,6 +79,7 @@ function getAkhanName(){
 
       akhanName = MALE_NAMES[indexOfDay];
 
+      document.getElementById("Click_here").innerHTML = "You were born on " + DAY_OF_WEEK[dayOfWeek] + ". Your Akhan name is " + akhanName;
    
 
     }else if (gender === "Female"){
@@ -86,6 +87,8 @@ function getAkhanName(){
      indexOfDay = dayOfWeek;
 
         akhanName = FEMALE_NAMES[indexOfDay];
+
+document.getElementById("Click_here").innerHTML = "You were born on " + DAY_OF_WEEK[dayOfWeek] + ". Your Akhan name is " + akhanName;
 
        //console.log("Your Akhan Name is " + akhanName);}
 
@@ -95,7 +98,7 @@ function getAkhanName(){
 
 console.log(DAY_OF_WEEK[dayOfWeek])
 
-document.getElementById("Click_here").innerHTML = "You were born on " + DAY_OF_WEEK[dayOfWeek] + ". Your Akhan name is " + akhanName;
+
 
 
 

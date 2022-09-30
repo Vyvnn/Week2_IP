@@ -36,12 +36,12 @@ body {display: flex;
 #container 
 {   
 
-    width: 80%;
+    width: 90%;
     background-color: rgb(5, 159, 66);
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 320px;
+    height: 380px;
 
 }
 #Date{margin: 2.5%;
@@ -54,4 +54,12 @@ h1{text-decoration: underline;
 p {font-style: normal;
 
 
+}
+#Click_here{background: transparent;
+
+}
+#bithdate{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
