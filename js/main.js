@@ -44,6 +44,10 @@ dayOfWeek=Math.floor (dayOfWeek);
 
 
 return date;
+
+
+
+
 }
 
     //to get usergender
@@ -55,8 +59,14 @@ function getUserGender() {
    
 // to get Akhan Name
 function getAkhanName(){
-        //getUserGender();
+        getUserGender();
         getDate();
+
+        if (!date){alert("Please pick your birthday");
+
+        return false;
+    
+        };
 
         console.log(gender);
         console.log(date);
