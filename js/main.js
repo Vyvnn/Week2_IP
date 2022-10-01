@@ -62,7 +62,10 @@ function noLaterDate(){
     parseddateToday = Date.parse(dateToday);
   
     parsedDateNow = Date.parse(date);
-  
+
+    //to subtract 3 hours to convert to local time
+   parsedDateNow = parsedDateNow - 10800000;
+
     if (parsedDateNow > parseddateToday) {
   
       alert("Date cannot be greater than today");
